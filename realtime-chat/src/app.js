@@ -1,8 +1,8 @@
-var path = require("../Module/node_modules/path");
-var express = require("../Module/node_modules/express");
+var path = require("../../Module/node_modules/path");
+var express = require("../../Module/node_modules/express");
 var app = express();
 var server = require('http').createServer(app);
-var io = require('../Module/node_modules/socket.io')(server);
+var io = require('../../Module/node_modules/socket.io/dist')(server);
 
 //Chỉ ra đường dẫn chứa css, js, images...
 app.use(express.static(path.join(__dirname, 'public')));
