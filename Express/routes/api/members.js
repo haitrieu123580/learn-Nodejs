@@ -57,7 +57,7 @@ router.put('/:id', (req, res) => {
 // Delete Member
 router.delete('/:id', (req, res) => {
   const found = members.some(idFilter(req));
-
+  
   if (found) {
     res.json({
       msg: 'Member deleted',
