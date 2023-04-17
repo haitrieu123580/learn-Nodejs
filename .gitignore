@@ -2,3 +2,4 @@ node_modules/
 Module/
 Express/
 .vscode/
+.env
